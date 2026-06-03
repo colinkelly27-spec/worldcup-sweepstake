@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,31 +8,29 @@
 
 <style>
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
 }
 
 header {
-    background: #006847;
-    color: white;
+    background: linear-gradient(135deg,#006847,#004d35);
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1400px;
     margin: auto;
     padding: 20px;
 }
 
 .card {
-    background: white;
-    border-radius: 10px;
+    background: #1e1e1e;
+    border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 table {
@@ -39,199 +38,124 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
 th {
     background: #006847;
     color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #333;
+}
+
+.groups-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.group-card {
+    background: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.group-card h3 {
+    margin: 0;
+    padding: 12px;
+    background: #006847;
+    text-align: center;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    color: #777;
+    color: #aaa;
 }
-
-.groups-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.groups-grid table {
-    width: 100%;
-    background: white;
-}
-
-.groups-grid td {
-    padding: 8px;
-}
-    
 </style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>🏆 World Cup 2026 Sweepstake</h1>
-    <p>Good luck everyone!</p>
+<h1>🏆 World Cup 2026 Sweepstake</h1>
+<p>Good luck everyone!</p>
 </header>
 
+<div class="container">
+
 <div class="card">
-    <h2>🎟 Sweepstake Assignments</h2>
-
-    <p>Draw completed - assignments will appear here.</p>
-
-    <table>
-        <tr>
-            <th>Participant</th>
-            <th>Team</th>
-        </tr>
-
-        <!-- We'll add your assignments later -->
-
-    </table>
+<h2>⏳ Countdown to Kickoff</h2>
+<p id="countdown"></p>
 </div>
 
 <div class="card">
-<h2>🌎 World Cup 2026 Groups</h2>
+<h2>🎟 Sweepstake Assignments</h2>
+
+<table>
+<tr>
+<th>Participant</th>
+<th>Team</th>
+</tr>
+
+<tr><td>---</td><td>---</td></tr>
+
+</table>
+</div>
+
+<div class="card">
+<h2>🌎 World Cup Groups</h2>
 
 <div class="groups-grid">
 
-<div>
+<div class="group-card">
 <h3>Group A</h3>
 <table>
-<tr><td>🇲🇽</td><td>Mexico</td></tr>
-<tr><td>🇿🇦</td><td>South Africa</td></tr>
-<tr><td>🇰🇷</td><td>South Korea</td></tr>
-<tr><td>🇨🇿</td><td>Czech Republic</td></tr>
+<tr>
+<th>#</th>
+<th>Team</th>
+<th>Owner</th>
+<th>MP</th>
+<th>Pts</th>
+</tr>
+<tr><td>1</td><td>🇲🇽 Mexico</td><td></td><td>0</td><td>0</td></tr>
+<tr><td>2</td><td>🇿🇦 South Africa</td><td></td><td>0</td><td>0</td></tr>
+<tr><td>3</td><td>🇰🇷 South Korea</td><td></td><td>0</td><td>0</td></tr>
+<tr><td>4</td><td>🇨🇿 Czechia</td><td></td><td>0</td><td>0</td></tr>
 </table>
 </div>
 
-<div>
+<div class="group-card">
 <h3>Group B</h3>
 <table>
-<tr><td>🇨🇦</td><td>Canada</td></tr>
-<tr><td>🇧🇦</td><td>Bosnia & Herzegovina</td></tr>
-<tr><td>🇶🇦</td><td>Qatar</td></tr>
-<tr><td>🇨🇭</td><td>Switzerland</td></tr>
-</table>
-</div>
-
-<div>
-<h3>Group C</h3>
-<table>
-<tr><td>🇧🇷</td><td>Brazil</td></tr>
-<tr><td>🇲🇦</td><td>Morocco</td></tr>
-<tr><td>🇭🇹</td><td>Haiti</td></tr>
-<tr><td>🏴</td><td>Scotland</td></tr>
-</table>
-</div>
-
-<div>
-<h3>Group D</h3>
-<table>
-<tr><td>🇺🇸</td><td>USA</td></tr>
-<tr><td>🇵🇾</td><td>Paraguay</td></tr>
-<tr><td>🇦🇺</td><td>Australia</td></tr>
-<tr><td>🇹🇷</td><td>Turkey</td></tr>
-</table>
-</div>
-
-<div>
-<h3>Group E</h3>
-<table>
-<tr><td>🇩🇪</td><td>Germany</td></tr>
-<tr><td>🇨🇼</td><td>Curacao</td></tr>
-<tr><td>🇨🇮</td><td>Ivory Coast</td></tr>
-<tr><td>🇪🇨</td><td>Ecuador</td></tr>
-</table>
-</div>
-
-<div>
-<h3>Group F</h3>
-<table>
-<tr><td>🇳🇱</td><td>Netherlands</td></tr>
-<tr><td>🇯🇵</td><td>Japan</td></tr>
-<tr><td>🇸🇪</td><td>Sweden</td></tr>
-<tr><td>🇹🇳</td><td>Tunisia</td></tr>
-</table>
-</div>
-
-<div>
-<h3>Group G</h3>
-<table>
-<tr><td>🇧🇪</td><td>Belgium</td></tr>
-<tr><td>🇪🇬</td><td>Egypt</td></tr>
-<tr><td>🇮🇷</td><td>Iran</td></tr>
-<tr><td>🇳🇿</td><td>New Zealand</td></tr>
-</table>
-</div>
-
-<div>
-<h3>Group H</h3>
-<table>
-<tr><td>🇪🇸</td><td>Spain</td></tr>
-<tr><td>🇨🇻</td><td>Cape Verde</td></tr>
-<tr><td>🇸🇦</td><td>Saudi Arabia</td></tr>
-<tr><td>🇺🇾</td><td>Uruguay</td></tr>
-</table>
-</div>
-
-<div>
-<h3>Group I</h3>
-<table>
-<tr><td>🇫🇷</td><td>France</td></tr>
-<tr><td>🇸🇳</td><td>Senegal</td></tr>
-<tr><td>🇮🇶</td><td>Iraq</td></tr>
-<tr><td>🇳🇴</td><td>Norway</td></tr>
-</table>
-</div>
-
-<div>
-<h3>Group J</h3>
-<table>
-<tr><td>🇦🇷</td><td>Argentina</td></tr>
-<tr><td>🇩🇿</td><td>Algeria</td></tr>
-<tr><td>🇦🇹</td><td>Austria</td></tr>
-<tr><td>🇯🇴</td><td>Jordan</td></tr>
-</table>
-</div>
-
-<div>
-<h3>Group K</h3>
-<table>
-<tr><td>🇵🇹</td><td>Portugal</td></tr>
-<tr><td>🇨🇩</td><td>DR Congo</td></tr>
-<tr><td>🇺🇿</td><td>Uzbekistan</td></tr>
-<tr><td>🇨🇴</td><td>Colombia</td></tr>
-</table>
-</div>
-
-<div>
-<h3>Group L</h3>
-<table>
-<tr><td>🏴</td><td>England</td></tr>
-<tr><td>🇭🇷</td><td>Croatia</td></tr>
-<tr><td>🇬🇭</td><td>Ghana</td></tr>
-<tr><td>🇵🇦</td><td>Panama</td></tr>
+<tr>
+<th>#</th>
+<th>Team</th>
+<th>Owner</th>
+<th>MP</th>
+<th>Pts</th>
+</tr>
+<tr><td>1</td><td>🇨🇦 Canada</td><td></td><td>0</td><td>0</td></tr>
+<tr><td>2</td><td>🇧🇦 Bosnia</td><td></td><td>0</td><td>0</td></tr>
+<tr><td>3</td><td>🇶🇦 Qatar</td><td></td><td>0</td><td>0</td></tr>
+<tr><td>4</td><td>🇨🇭 Switzerland</td><td></td><td>0</td><td>0</td></tr>
 </table>
 </div>
 
 </div>
-</div>    
-    <div class="card">
-        <h2>Prize Structure</h2>
+</div>
 
-        <ul>
-            <li>🥇 Winner: 70%</li>
-            <li>🥈 Runner-up: 30%</li>
-            <li>🥉 Worst Performing Kids Team €5</li>
-        </ul>
-    </div>
+<div class="card">
+<h2>💰 Prize Structure</h2>
+
+<ul>
+<li>🥇 Winner - 70%</li>
+<li>🥈 Runner-up - 30%</li>
+<li>🥉 Worst Performing Kids Team - €5</li>
+</ul>
+</div>
 
 <div class="card">
 <h2>📅 Tournament Schedule</h2>
@@ -247,17 +171,30 @@ footer {
 </ul>
 </div>
 
-    <div class="card">
-        <h2>Leaderboard</h2>
+<div class="card">
+<h2>🏅 Leaderboard</h2>
+<p>Standings will be updated during the tournament.</p>
+</div>
 
-        <p>Update this section as the tournament progresses.</p>
-    </div>
-
-
+</div>
 
 <footer>
-    World Cup 2026 Sweepstake
+World Cup 2026 Sweepstake
 </footer>
+
+<script>
+const kickoff = new Date("June 11, 2026 00:00:00").getTime();
+
+setInterval(function() {
+    const now = new Date().getTime();
+    const distance = kickoff - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    document.getElementById("countdown").innerHTML =
+        days + " days until kickoff";
+}, 1000);
+</script>
 
 </body>
 </html>
