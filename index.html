@@ -392,18 +392,28 @@
 // type: 'update' | 'result' | 'alert'
 const NEWS = [
   // Example — uncomment to test:
- //  { type:'update', title:'Tournament Kicks Off Tomorrow!', body:'The group stage begins 11 June. Keep an eye on this page for live scores and standings.', date:'10 June 2026' },
-  // { type:'result', title:'Opening Night in Mexico', body:"The road to World Cup glory begins tonight as Diego draws hosts Mexico against Nanna Cannon's South Africa in the opening match of the 2026 World Cup.", date:'11 June 2026' },
-  // { type:'result', title:'Friday Double-Header', body:"Day 2 brings the first double-header of the tournament as Eddie & Mary's Czechia take on the currently ownerless South Korea, before Tom & Phil's Canada face the Kelly Family's Bosnia in a battle for early Group B bragging rights.", date:'12 June 2026' },
-  // { type:'result', title:'Heavyweights Enter the Arena', body:"Saturday sees the first tournament favourite in action as Oisin's Brazil meets Morocco, while Philomena's Paraguay battles the USA and Steven's Qatar opens its campaign against Switzerland.", date:'13 June 2026' },
-  // { type:'result', title:'Sunday Showcase', body:"A packed Sunday sees four more groups get underway as Patjoe's Haiti faces Scotland, Trina's Türkiye takes on Australia, Steven & Trina's Germany meet Curaçao, and Nicola's Japan battles the Netherlands in the day's late kick-off.", date:'14 June 2026' },
-  // { type:'result', title:'Monday's Main Event', body:Monday brings a packed schedule with Dean & Phil's Ecuador facing Ivory Coast, Caroline's Sweden taking on Tunisia, the O'Connell Family's Spain meeting Mary's Cape Verde, Colin's Egypt battling Daniel's Belgium, and Isla's Saudi Arabia rounding off the day against Uruguay.", date:'15 June 2026' },
-  // { type:'result', title:'France Takes the Stage', body:"Tuesday may only feature three matches, but one of the tournament favourites finally arrives as Dara's France begins its campaign against Senegal, while Ben's Iran faces New Zealand and Dean's Iraq takes on Norway.", date:'16 June 2026' },
-  // { type:'result', title:'The Big Guns Arrive', body:"It's a huge day for the sweepstake as Brian's Argentina, Evie's Portugal and Ryan's England all begin their World Cup journeys, with only one thing on everyone's mind: taking an early step towards glory.", date:'17 June 2026' },
-  // { type:'result', title:'The Early Movers', body:"ith the first round of matches almost complete, Thursday offers a chance to seize an early advantage as Eddie's Ghana faces Katie's Panama, Tom Cannon's Uzbekistan takes on Colombia, Eddie & Mary's Czechia battle Philomena C's South Africa, the Kelly Family's Bosnia meet Switzerland, and Tom & Phil's Canada clash with Steven's Qatar.", date:'18 June 2026' },
-  //End of all first round games
-  // { type:'result', title:'cond Chances and Statement Wins', body:"Friday's action sees Deigo's Mexico looking to build momentum against South Korea, while the USA faces Australia in a battle to get their campaign moving. The day concludes with Scotland taking on Morocco as both sides search for a crucial result in Group C.", date:'19 June 2026' },
-  
+// { type:'update', title:'Tournament Kicks Off Tomorrow!', body:'The group stage begins 11 June. Keep an eye on this page for live scores and standings.', date:'10 June 2026' },
+
+// { type:'result', title:'Opening Night in Mexico', body:"The road to World Cup glory begins tonight as Diego's Mexico face Nanna Cannon's South Africa in the opening match of the 2026 World Cup.", date:'11 June 2026' },
+
+// { type:'result', title:'Friday Double-Header', body:"Day 2 brings the first double-header of the tournament as Eddie & Mary's Czechia take on Sinead's South Korea, before Tom & Phil's Canada face the Kelly Family's Bosnia in a battle for early Group B bragging rights.", date:'12 June 2026' },
+
+// { type:'result', title:'Heavyweights Enter the Arena', body:"Saturday sees the first tournament favourite in action as Oisin's Brazil meets the O'Reilly Family's Morocco, while Aoibhin's USA battles Philomena's Paraguay and Steven's Qatar opens its campaign against Evan's Switzerland.", date:'13 June 2026' },
+
+// { type:'result', title:'Sunday Showcase', body:"A packed Sunday sees four more groups get underway as Patjoe's Haiti faces Scotland, Trina's Türkiye takes on Brendan's Australia, Steven & Trina's Germany meet Curaçao, and Nicola's Japan battles Ella's Netherlands in the day's late kick-off.", date:'14 June 2026' },
+
+// { type:'result', title:'Monday's Main Event', body:"Monday brings a packed schedule with Dean & Phil's Ecuador facing Ivory Coast, Caroline's Sweden taking on Caoilin's Tunisia, the O'Connell Family's Spain meeting Mary's Cape Verde, Colin's Egypt battling Daniel's Belgium, and Isla's Saudi Arabia rounding off the day against Darren's Uruguay.", date:'15 June 2026' },
+
+// { type:'result', title:'France Takes the Stage', body:"Tuesday may only feature three matches, but one of the tournament favourites finally arrives as Dara's France begins its campaign against Senegal, while Ben's Iran faces John's New Zealand and Dean's Iraq takes on Norway.", date:'16 June 2026' },
+
+// { type:'result', title:'The Big Guns Arrive', body:"It's a huge day for the sweepstake as Brian's Argentina, Evie's Portugal and Ryan's England all begin their World Cup journeys, with only one thing on everyone's mind: taking an early step towards glory.", date:'17 June 2026' },
+
+// { type:'result', title:'The Early Movers', body:"With the first round of matches almost complete, Thursday offers a chance to seize an early advantage as Eddie's Ghana faces Katie's Panama, Tom Cannon's Uzbekistan takes on Colombia, Eddie & Mary's Czechia battle Nanna Cannon's South Africa, the Kelly Family's Bosnia meet Evan's Switzerland, and Tom & Phil's Canada clash with Steven's Qatar.", date:'18 June 2026' },
+
+// End of all first round games
+
+// { type:'result', title:'Second Chances and Statement Wins', body:"Friday's action sees Diego's Mexico looking to build momentum against Sinead's South Korea, while Aoibhin's USA faces Brendan's Australia in a battle to get their campaign moving. The day concludes with Scotland taking on the O'Reilly Family's Morocco as both sides search for a crucial result in Group C.", date:'19 June 2026' },
+
 ];
 
 // ── GROUPS ────────────────────────────────────────────────────────────
@@ -411,26 +421,26 @@ const NEWS = [
 const GROUPS = [
   { name:'A', teams:[
     { flag:'🇲🇽', name:'Mexico',       owner:'Deigo',          mp:0, pts:0 },
-    { flag:'🇿🇦', name:'South Africa', owner:'Philomena C',    mp:0, pts:0 },
-    { flag:'🇰🇷', name:'South Korea',  owner:'',               mp:0, pts:0 },
+    { flag:'🇿🇦', name:'South Africa', owner:'Nanna Cannon',    mp:0, pts:0 },
+    { flag:'🇰🇷', name:'South Korea',  owner:'Sinead',               mp:0, pts:0 },
     { flag:'🇨🇿', name:'Czechia',      owner:'Eddie & Mary',   mp:0, pts:0 },
   ]},
   { name:'B', teams:[
     { flag:'🇨🇦', name:'Canada',       owner:'Tom & Phil',     mp:0, pts:0 },
     { flag:'🇧🇦', name:'Bosnia',       owner:'Kelly Family',   mp:0, pts:0 },
     { flag:'🇶🇦', name:'Qatar',        owner:'Steven',         mp:0, pts:0 },
-    { flag:'🇨🇭', name:'Switzerland',  owner:'',               mp:0, pts:0 },
+    { flag:'🇨🇭', name:'Switzerland',  owner:'Evan',               mp:0, pts:0 },
   ]},
   { name:'C', teams:[
     { flag:'🇧🇷', name:'Brazil',       owner:'Oisin',          mp:0, pts:0 },
-    { flag:'🇲🇦', name:'Morocco',      owner:'',               mp:0, pts:0 },
+    { flag:'🇲🇦', name:'Morocco',      owner:'O'Reilly Family',               mp:0, pts:0 },
     { flag:'🇭🇹', name:'Haiti',        owner:'Patjoe',         mp:0, pts:0 },
     { flag:'<img src="scotland.png" style="width:1.3rem;height:auto;vertical-align:middle">', name:'Scotland',    owner:'',               mp:0, pts:0 },
   ]},
   { name:'D', teams:[
-    { flag:'🇺🇸', name:'USA',          owner:'',               mp:0, pts:0 },
+    { flag:'🇺🇸', name:'USA',          owner:'Aoibhin',               mp:0, pts:0 },
     { flag:'🇵🇾', name:'Paraguay',     owner:'Philomena',      mp:0, pts:0 },
-    { flag:'🇦🇺', name:'Australia',    owner:'',               mp:0, pts:0 },
+    { flag:'🇦🇺', name:'Australia',    owner:'Brendan',               mp:0, pts:0 },
     { flag:'🇹🇷', name:'Türkiye',      owner:'Trina',          mp:0, pts:0 },
   ]},
   { name:'E', teams:[
@@ -440,22 +450,22 @@ const GROUPS = [
     { flag:'🇪🇨', name:'Ecuador',      owner:'Dean & Phil',    mp:0, pts:0 },
   ]},
   { name:'F', teams:[
-    { flag:'🇳🇱', name:'Netherlands',  owner:'',               mp:0, pts:0 },
+    { flag:'🇳🇱', name:'Netherlands',  owner:'Ella',               mp:0, pts:0 },
     { flag:'🇯🇵', name:'Japan',        owner:'Nicola',         mp:0, pts:0 },
     { flag:'🇸🇪', name:'Sweden',       owner:'Caroline',       mp:0, pts:0 },
-    { flag:'🇹🇳', name:'Tunisia',      owner:'',               mp:0, pts:0 },
+    { flag:'🇹🇳', name:'Tunisia',      owner:'Caoilin',               mp:0, pts:0 },
   ]},
   { name:'G', teams:[
     { flag:'🇧🇪', name:'Belgium',      owner:'Daniel',         mp:0, pts:0 },
     { flag:'🇪🇬', name:'Egypt',        owner:'Colin',          mp:0, pts:0 },
     { flag:'🇮🇷', name:'Iran',         owner:'Ben',            mp:0, pts:0 },
-    { flag:'🇳🇿', name:'New Zealand',  owner:'',               mp:0, pts:0 },
+    { flag:'🇳🇿', name:'New Zealand',  owner:'John',               mp:0, pts:0 },
   ]},
   { name:'H', teams:[
     { flag:'🇪🇸', name:'Spain',        owner:"O'Connell Fam",  mp:0, pts:0 },
     { flag:'🇨🇻', name:'Cape Verde',   owner:'Mary',           mp:0, pts:0 },
     { flag:'🇸🇦', name:'Saudi Arabia', owner:'Isla',           mp:0, pts:0 },
-    { flag:'🇺🇾', name:'Uruguay',      owner:'',               mp:0, pts:0 },
+    { flag:'🇺🇾', name:'Uruguay',      owner:'Darren',               mp:0, pts:0 },
   ]},
   { name:'I', teams:[
     { flag:'🇫🇷', name:'France',       owner:'Dara',           mp:0, pts:0 },
@@ -467,11 +477,11 @@ const GROUPS = [
     { flag:'🇦🇷', name:'Argentina',    owner:'Brian',          mp:0, pts:0 },
     { flag:'🇩🇿', name:'Algeria',      owner:'Millie',         mp:0, pts:0 },
     { flag:'🇦🇹', name:'Austria',      owner:'Abbie',          mp:0, pts:0 },
-    { flag:'🇯🇴', name:'Jordan',       owner:'',               mp:0, pts:0 },
+    { flag:'🇯🇴', name:'Jordan',       owner:'Sharon',               mp:0, pts:0 },
   ]},
   { name:'K', teams:[
     { flag:'🇵🇹', name:'Portugal',     owner:'Evie',           mp:0, pts:0 },
-    { flag:'🇨🇩', name:'DR Congo',     owner:'',               mp:0, pts:0 },
+    { flag:'🇨🇩', name:'DR Congo',     owner:'Kierans Family',               mp:0, pts:0 },
     { flag:'🇺🇿', name:'Uzbekistan',   owner:'Tom Cannon',     mp:0, pts:0 },
     { flag:'🇨🇴', name:'Colombia',     owner:'',               mp:0, pts:0 },
   ]},
