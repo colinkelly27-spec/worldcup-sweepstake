@@ -454,11 +454,11 @@ const NEWS = [
 
 //{ type:'news', title:'Massive Night Ahead in Groups K and L', body:"The spotlight turns to Groups K and L as several sweepstake contenders face crucial second-round fixtures. Ryan's England take on Eddie's Ghana in the standout match of the evening, with both sides looking to build on opening victories and take control of Group L. Earlier, Evie's Portugal meet Tom Cannon's Uzbekistan knowing a win would put them firmly in the qualification picture, while Patjoe's surprise-package Colombia face Kieran's Family's DR Congo as they look to continue their impressive start to the tournament. Elsewhere, Leah's Croatia and Katie's Panama meet in a fixture neither side can afford to lose after opening-round defeats. By the end of the night, some teams could have one foot in the knockout stages while others may already be staring at elimination.", date:'23 June 2026' },
 
-  { type:'result', title:'Portugal Hit Top Gear as Colombia Close In', body:"Group K saw two very different stories unfold as Evie's Portugal finally found their stride with a commanding 5-0 victory over Tom Cannon's Uzbekistan. The result throws Portugal firmly into the qualification picture and serves as a warning to the rest of the field that they may be finding form at the perfect time. In the group's other fixture, Patjoe's bonus team Colombia continued their impressive tournament with a narrow 1-0 victory over Kieran's Family's DR Congo. With two wins from two, Colombia are now on the brink of the knockout stages and continue to be one of the surprise success stories of the sweepstake.", date:'24 June 2026' },
+ // { type:'result', title:'Portugal Hit Top Gear as Colombia Close In', body:"Group K saw two very different stories unfold as Evie's Portugal finally found their stride with a commanding 5-0 victory over Tom Cannon's Uzbekistan. The result throws Portugal firmly into the qualification picture and serves as a warning to the rest of the field that they may be finding form at the perfect time. In the group's other fixture, Patjoe's bonus team Colombia continued their impressive tournament with a narrow 1-0 victory over Kieran's Family's DR Congo. With two wins from two, Colombia are now on the brink of the knockout stages and continue to be one of the surprise success stories of the sweepstake.", date:'24 June 2026' },
 
-{ type:'result', title:'Group L Tightens After Goalless Stalemate', body:"The headline clash between Ryan's England and Eddie's Ghana failed to produce a goal, but the 0-0 draw leaves both teams in a strong position heading into the final round of matches. Elsewhere, Leah's Croatia kept their qualification hopes alive with a hard-fought 1-0 victory over Katie's Panama. With England and Ghana still leading the way, Group L looks set for a tense finish as the battle for knockout places goes down to the final matchday.", date:'24 June 2026' },
+//{ type:'result', title:'Group L Tightens After Goalless Stalemate', body:"The headline clash between Ryan's England and Eddie's Ghana failed to produce a goal, but the 0-0 draw leaves both teams in a strong position heading into the final round of matches. Elsewhere, Leah's Croatia kept their qualification hopes alive with a hard-fought 1-0 victory over Katie's Panama. With England and Ghana still leading the way, Group L looks set for a tense finish as the battle for knockout places goes down to the final matchday.", date:'24 June 2026' },
 
-{ type:'news', title:'Final Round Drama Begins', body:"The final round of group-stage fixtures gets underway with plenty still to be decided. In Group B, Tom & Phil's Canada face Evan's Switzerland in a blockbuster clash between two teams that have already secured strong positions after dominant second-round victories. Elsewhere, Stephen's Qatar meet the Kelly Family's Bosnia & Herzegovina, with both sides needing a result to keep any remaining qualification hopes alive. Over in Group C, Mary's Scotland face Oisin's Brazil in one of the most intriguing matches of the day. Scotland's surprise run has captured plenty of attention, but Brazil know a victory would put them in a strong position heading into the knockout rounds. The group's other fixture sees the O'Reilly Family's Morocco take on Patjoe's Haiti, with Morocco aiming to build on their impressive win over Scotland. Looking ahead to tomorrow, Diego's Mexico and Sinead's South Korea will be looking to finish Group A strongly, while Nanna Cannon's South Africa and Eddie & Mary's Czechia battle to keep their World Cup dreams alive.", date:'24 June 2026' },
+//{ type:'news', title:'Final Round Drama Begins', body:"The final round of group-stage fixtures gets underway with plenty still to be decided. In Group B, Tom & Phil's Canada face Evan's Switzerland in a blockbuster clash between two teams that have already secured strong positions after dominant second-round victories. Elsewhere, Stephen's Qatar meet the Kelly Family's Bosnia & Herzegovina, with both sides needing a result to keep any remaining qualification hopes alive. Over in Group C, Mary's Scotland face Oisin's Brazil in one of the most intriguing matches of the day. Scotland's surprise run has captured plenty of attention, but Brazil know a victory would put them in a strong position heading into the knockout rounds. The group's other fixture sees the O'Reilly Family's Morocco take on Patjoe's Haiti, with Morocco aiming to build on their impressive win over Scotland. Looking ahead to tomorrow, Diego's Mexico and Sinead's South Korea will be looking to finish Group A strongly, while Nanna Cannon's South Africa and Eddie & Mary's Czechia battle to keep their World Cup dreams alive.", date:'24 June 2026' },
 
 
 
@@ -470,24 +470,24 @@ const NEWS = [
 // mp = matches played, pts = points
 const GROUPS = [
   { name:'A', teams:[
-    { flag:'🇲🇽', name:'Mexico',       owner:'Deigo',          mp:2, pts:6 },
-    { flag:'🇰🇷', name:'South Korea',  owner:'Sinead',               mp:2, pts:3 },
-    { flag:'🇨🇿', name:'Czechia',      owner:'Eddie & Mary',   mp:2, pts:1 },
-    { flag:'🇿🇦', name:'South Africa', owner:'Nanna Cannon',    mp:2, pts:1 },
+    { flag:'🇲🇽', name:'Mexico',       owner:'Deigo',          mp:3, pts:9 },
+    { flag:'🇿🇦', name:'South Africa', owner:'Nanna Cannon',    mp:3, pts:4 },
+    { flag:'🇰🇷', name:'South Korea',  owner:'Sinead',               mp:3, pts:3 },
+            { flag:'🇨🇿', name:'Czechia',      owner:'Eddie & Mary',   mp:3, pts:1 },
   ]},
   { name:'B', teams:[
-    { flag:'🇨🇦', name:'Canada',       owner:'Tom & Phil',     mp:2, pts:4 },
-    { flag:'🇨🇭', name:'Switzerland',  owner:'Evan',               mp:2, pts:4 },
-    { flag:'🇧🇦', name:'Bosnia',       owner:'Kelly Family',   mp:2, pts:1 },
-    { flag:'🇶🇦', name:'Qatar',        owner:'Stephen',         mp:1, pts:1 },
+    { flag:'🇨🇭', name:'Switzerland',  owner:'Evan',               mp:3, pts:7 },
+    { flag:'🇨🇦', name:'Canada',       owner:'Tom & Phil',     mp:3, pts:4 },
+        { flag:'🇧🇦', name:'Bosnia',       owner:'Kelly Family',   mp:3, pts:4 },
+    { flag:'🇶🇦', name:'Qatar',        owner:'Stephen',         mp:3, pts:1 },
     
   ]},
   { name:'C', teams:[
     
-    { flag:'🇧🇷', name:'Brazil',       owner:'Oisin',          mp:2, pts:4 },
-    { flag:'🇲🇦', name:'Morocco',      owner:'O Reilly Family',               mp:2, pts:4 },
-    { flag:'<img src="scotland.png" style="width:1.3rem;height:auto;vertical-align:middle">', name:'Scotland',    owner:'Nanny Kelly 2nd Pick',               mp:2, pts:3 },
-    { flag:'🇭🇹', name:'Haiti',        owner:'Patjoe',         mp:2, pts:0 },
+    { flag:'🇧🇷', name:'Brazil',       owner:'Oisin',          mp:3, pts:7 },
+    { flag:'🇲🇦', name:'Morocco',      owner:'O Reilly Family',               mp:3, pts:7 },
+    { flag:'<img src="scotland.png" style="width:1.3rem;height:auto;vertical-align:middle">', name:'Scotland',    owner:'Nanny Kelly 2nd Pick',               mp:3, pts:3 },
+    { flag:'🇭🇹', name:'Haiti',        owner:'Patjoe',         mp:3, pts:0 },
     
   ]},
   { name:'D', teams:[
