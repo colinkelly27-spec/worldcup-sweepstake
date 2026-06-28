@@ -466,8 +466,8 @@ const NEWS = [
 //{ type:'result', title:'Brazil and Morocco Progress, Scotland Bow Out', body:"Group C lived up to its billing as one of the tournament's most competitive groups. Oisin's Brazil and the O'Reilly Family's Morocco both finished unbeaten on seven points to secure their places in the knockout stages, with Brazil claiming first place on goal difference. Mary's bonus team Scotland fought bravely throughout the group stage but were unable to overcome the tournament favourites, finishing third on three points. Patjoe's Haiti leave the tournament still searching for their first point.", date:'25 June 2026' },
 
 //{ type:'news', title:'Knockout Places Up for Grabs', body:"The race for the Round of 32 intensifies as several groups reach their decisive final matches. In Group E, the Cannon Family's Germany will look to complete a perfect group stage against the Smyth Family's Ecuador, while Stephen's Curaçao face Nanna Cannon's bonus pick Ivory Coast with pride and qualification hopes on the line. Group F promises even more drama as Caroline's Sweden and Nicola's Japan meet in a winner-takes-all showdown, with a place in the knockout rounds hanging in the balance. Elsewhere, Ella's Netherlands will be expected to finish the job against Caoilin's Tunisia after their stunning victory over Sweden. Finally, Group D reaches its conclusion as Brendan's Australia take on Philomena's Paraguay in a crucial battle for qualification, while Aoibhin's USA aim to maintain their perfect record against Trina's Türkiye.", date:'25 June 2026' },
-
-{ type:'news', title:'Final Group Stage Showdowns Await', body:"The final round of the group stage reaches its climax over the coming days, with several heavyweight clashes still to come. In Group I, Darragh's France and Isla's bonus pick Norway meet to decide top spot after both won their opening two matches, while Sharon's bonus pick Senegal and Dean's Iraq battle to avoid an early exit. Group H remains finely balanced as the O'Connell Family's Spain face Darren's Uruguay in a crucial encounter, with Nanny Kelly's Cape Verde taking on Isla's Saudi Arabia in the other fixture. Over in Group G, Colin's Egypt put top spot on the line against Ben's Iran, while Daniel's Belgium know victory over John's New Zealand could still secure qualification. The final wave of group-stage fixtures also includes Ryan's England against Katie's Panama, Eddie's Ghana versus Leah's Croatia, Patjoe's in-form Colombia taking on Evie's Portugal in a battle between two of Group K's strongest sides, and Brian's Argentina looking to complete a perfect group campaign against Sharon's Jordan while Abbie's Austria and Millie's Algeria meet in a winner-takes-all showdown for second place.", date:'26 June 2026' },
+//{ type:'news', title:'Final Group Stage Showdowns Await', body:"The final round of the group stage reaches its climax over the coming days, with several heavyweight clashes still to come. In Group I, Darragh's France and Isla's bonus pick Norway meet to decide top spot after both won their opening two matches, while Sharon's bonus pick Senegal and Dean's Iraq battle to avoid an early exit. Group H remains finely balanced as the O'Connell Family's Spain face Darren's Uruguay in a crucial encounter, with Nanny Kelly's Cape Verde taking on Isla's Saudi Arabia in the other fixture. Over in Group G, Colin's Egypt put top spot on the line against Ben's Iran, while Daniel's Belgium know victory over John's New Zealand could still secure qualification. The final wave of group-stage fixtures also includes Ryan's England against Katie's Panama, Eddie's Ghana versus Leah's Croatia, Patjoe's in-form Colombia taking on Evie's Portugal in a battle between two of Group K's strongest sides, and Brian's Argentina looking to complete a perfect group campaign against Sharon's Jordan while Abbie's Austria and Millie's Algeria meet in a winner-takes-all showdown for second place.", date:'26 June 2026' },
+{ type:'news', title:'The Knockout Stage is Set!', body:"After an unforgettable group stage, the field has been cut from 48 teams to just 32. Some of the tournament favourites lived up to expectations, while several surprise packages earned their place in the knockout rounds. The Cannon Family's Germany, Darragh's France, Brian's Argentina, Ryan's England, Diego's Mexico and Oisin's Brazil all remain firmly in contention, while bonus teams have also enjoyed remarkable success. Patjoe's bonus pick Colombia topped Group K with a perfect record, Isla's bonus pick Norway stormed through Group I unbeaten, Nanna Cannon's bonus pick Ivory Coast reached the Round of 32, and Sharon's bonus pick Senegal also survived to fight another day. From here on, there are no second chances. Every match is win or go home, and by the end of the tournament only one sweepstake entrant will be celebrating as World Cup champion.", date:'28 June 2026' },
 
   
 ];
@@ -590,15 +590,31 @@ const BRACKET_ROUNDS = [
   {
     label: 'Round of 32',
     matches: [
-      { home:{ flag:'🇫🇷', name:'France' }, away:{ flag:'🇸🇳', name:'Senegal' }, homeGoals:2, awayGoals:0, homeWin:true },
-      { home:{ flag:'🇪🇸', name:'Spain'  }, away:{ flag:'🇨🇻', name:'Cape Verde' }, homeGoals:3, awayGoals:1, homeWin:true },
+       { home:{ flag:'🇩🇪', name:'Germany' },      away:{ flag:'🇵🇾', name:'Paraguay' },      homeGoals:null, awayGoals:null, homeWin:null },
+  { home:{ flag:'🇫🇷', name:'France' },       away:{ flag:'🇸🇪', name:'Sweden' },        homeGoals:null, awayGoals:null, homeWin:null },
+  { home:{ flag:'🇿🇦', name:'South Africa' }, away:{ flag:'🇨🇦', name:'Canada' },        homeGoals:null, awayGoals:null, homeWin:null },
+  { home:{ flag:'🇳🇱', name:'Netherlands' },  away:{ flag:'🇲🇦', name:'Morocco' },       homeGoals:null, awayGoals:null, homeWin:null },
+  { home:{ flag:'🇵🇹', name:'Portugal' },     away:{ flag:'🇭🇷', name:'Croatia' },       homeGoals:null, awayGoals:null, homeWin:null },
+  { home:{ flag:'🇪🇸', name:'Spain' },        away:{ flag:'🇦🇹', name:'Austria' },       homeGoals:null, awayGoals:null, homeWin:null },
+  { home:{ flag:'🇺🇸', name:'USA' },          away:{ flag:'🇧🇦', name:'Bosnia & Herzegovina' }, homeGoals:null, awayGoals:null, homeWin:null },
+  { home:{ flag:'🇧🇪', name:'Belgium' },      away:{ flag:'🇸🇳', name:'Senegal' },       homeGoals:null, awayGoals:null, homeWin:null },
+
+  { home:{ flag:'🇧🇷', name:'Brazil' },       away:{ flag:'🇯🇵', name:'Japan' },         homeGoals:null, awayGoals:null, homeWin:null },
+  { home:{ flag:'🇨🇮', name:'Ivory Coast' },  away:{ flag:'🇳🇴', name:'Norway' },        homeGoals:null, awayGoals:null, homeWin:null },
+  { home:{ flag:'🇲🇽', name:'Mexico' },       away:{ flag:'🇪🇨', name:'Ecuador' },       homeGoals:null, awayGoals:null, homeWin:null },
+  { home:{ flag:'🏴', name:'England' },       away:{ flag:'🇨🇩', name:'DR Congo' },      homeGoals:null, awayGoals:null, homeWin:null },
+  { home:{ flag:'🇦🇷', name:'Argentina' },    away:{ flag:'🇨🇻', name:'Cape Verde' },    homeGoals:null, awayGoals:null, homeWin:null },
+  { home:{ flag:'🇦🇺', name:'Australia' },    away:{ flag:'🇪🇬', name:'Egypt' },         homeGoals:null, awayGoals:null, homeWin:null },
+  { home:{ flag:'🇨🇭', name:'Switzerland' },  away:{ flag:'🇩🇿', name:'Algeria' },       homeGoals:null, awayGoals:null, homeWin:null },
+  { home:{ flag:'🇨🇴', name:'Colombia' },     away:{ flag:'🇬🇭', name:'Ghana' },         homeGoals:null, awayGoals:null, homeWin:null },
+
       // ... more matches
     ]
   },
   {
     label: 'Round of 16',
     matches: [
-      { home:{ flag:'🇫🇷', name:'France' }, away:{ flag:'🇪🇸', name:'Spain' }, homeGoals:null, awayGoals:null },
+      { home:{ flag:'🏴', name:'TBD' }, away:{ flag:'🏴', name:'TDB' }, homeGoals:null, awayGoals:null },
     ]
   },
   */
